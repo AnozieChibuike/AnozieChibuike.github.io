@@ -1,0 +1,51 @@
+body {
+    margin-top: 60px;
+    background-color: rgb(230, 230, 230);
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+#toggle {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+.dark-button {
+    background-color: rgb(68, 68, 68);
+}
+
+
+button:active {
+    background-color: grey;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+.down :first-child {
+    margin-left: 32px;
+}
+.down button {
+    margin: 20px;
+}
+
+.container {
+    border: 1px solid gold;
+    text-align: center;
+    border-radius: 800px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    height: 300px;
+} 
