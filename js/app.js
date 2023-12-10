@@ -3,7 +3,8 @@ const stopElem = document.getElementById('stop')
 const resetElem = document.getElementById('reset')
 const toggleElem = document.getElementById('toggle')
 const pElem = document.getElementsByClassName('time')[0]
-console.log(pElem)
+
+stopElem.style.display = 'none'
 let hour = 0;
 let minute = 0;
 let seconds = 0;
@@ -53,18 +54,18 @@ function start() {
         }
         pElem.innerText = `${hour}:${minute}:${seconds}`
     },1000)
-    stopElem.style.cursor = 'pointer'
-    stopElem.disabled = false
-    startElem.style.cursor = 'not-allowed'
-    startElem.disabled = true
+    stopElem.style.display = 'inline'
+    // stopElem.disabled = false
+    // startElem.style.cursor = 'not-allowed'
+    startElem.style.display = 'none'
 }
 
 function interva() {
     clearInterval(t)
-    stopElem.style.cursor = 'not-allowed'
-    stopElem.disabled = true
-    startElem.style.cursor = 'pointer'
-    startElem.disabled = false
+    stopElem.style.display = 'none'
+    // stopElem.disabled = true
+    // startElem.style.cursor = 'pointer'
+    startElem.style.display = 'inline'
 }
 
 function reset() {
